@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Leasing Platform — architecture overview</title>
+  <desc id="desc">Web interface connects to a Go application with HTTP handlers, business logic and SQL repositories. The application uses PostgreSQL, external APIs, document processing and file storage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1723"/><stop offset="1" stop-color="#101C2D"/></linearGradient>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L6 3.5L0 7" stroke="#71869B" stroke-width="1.4"/></marker>
+  </defs>
+  <rect x="1" y="1" width="1198" height="548" rx="22" fill="url(#bg)" stroke="#26374A"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="44" y="48" fill="#6CE0D0" font-size="12" font-weight="600" letter-spacing="2.4">LEASING PLATFORM</text>
+    <text x="44" y="91" fill="#F1F6FC" font-size="29" font-weight="600">One application. Connected workflows.</text>
+    <text x="44" y="119" fill="#94A8BC" font-size="14">Public architecture overview</text>
+
+    <path d="M276 238H359" stroke="#71869B" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M822 238H876" stroke="#71869B" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M595 299V343H187V381M595 343V381M595 343H1003V381" stroke="#71869B" stroke-width="1.5"/>
+    <circle cx="595" cy="343" r="3" fill="#6CE0D0"/>
+
+    <rect x="44" y="178" width="232" height="121" rx="12" fill="#142234" stroke="#34485F"/>
+    <text x="66" y="207" fill="#94A8BC" font-size="11" letter-spacing="1.4">INTERFACE</text>
+    <text x="66" y="240" fill="#F1F6FC" font-size="21" font-weight="600">Web workspace</text>
+    <text x="66" y="271" fill="#AFC0D0" font-size="13">HTML templates · JavaScript</text>
+
+    <rect x="366" y="178" width="456" height="121" rx="12" fill="#123238" stroke="#4FB8AD"/>
+    <text x="388" y="207" fill="#6CE0D0" font-size="11" letter-spacing="1.4">APPLICATION</text>
+    <text x="388" y="240" fill="#F1F6FC" font-size="21" font-weight="600">Go backend</text>
+    <text x="388" y="271" fill="#BADED9" font-size="13">HTTP handlers → Business logic → SQL repositories</text>
+
+    <rect x="884" y="178" width="272" height="121" rx="12" fill="#142234" stroke="#34485F"/>
+    <text x="906" y="207" fill="#94A8BC" font-size="11" letter-spacing="1.4">DATA</text>
+    <text x="906" y="240" fill="#F1F6FC" font-size="21" font-weight="600">PostgreSQL</text>
+    <text x="906" y="271" fill="#AFC0D0" font-size="13">Application data · Migrations</text>
+
+    <rect x="44" y="382" width="286" height="107" rx="12" fill="#142234" stroke="#34485F"/>
+    <text x="66" y="418" fill="#F1F6FC" font-size="18" font-weight="600">External APIs</text>
+    <text x="66" y="450" fill="#AFC0D0" font-size="13">Data connectors</text>
+
+    <rect x="452" y="382" width="286" height="107" rx="12" fill="#142234" stroke="#34485F"/>
+    <text x="474" y="418" fill="#F1F6FC" font-size="18" font-weight="600">Document processing</text>
+    <text x="474" y="450" fill="#AFC0D0" font-size="13">Python parsers · Output forms</text>
+
+    <rect x="860" y="382" width="296" height="107" rx="12" fill="#142234" stroke="#34485F"/>
+    <text x="882" y="418" fill="#F1F6FC" font-size="18" font-weight="600">File storage</text>
+    <text x="882" y="450" fill="#AFC0D0" font-size="13">Documents · Attachments</text>
+    <text x="1156" y="525" text-anchor="end" fill="#71869B" font-size="11" letter-spacing="1">SIMPLIFIED · NO INTERNAL CONFIGURATION</text>
+  </g>
+</svg>
